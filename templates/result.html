@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF Reader - Result</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="w-full flex justify-center items-center bg-slate-200">
+    <div class="w-3/4 ms:w-[90%] flex flex-col gap-5 items-center py-10">
+      <h1 class="text-4xl font-bold">{{filename}}</h1>
+      <p class="text-justify">{{text}}</p>
+      <form action="/again" method="POST" class="mt-10">
+        <input
+          type="submit"
+          value="Upload another PDF"
+          class="cursor-pointer inline-block bg-red-700 hover:bg-red-600 font-semibold text-white text-center px-4 py-3 rounded-lg transition duration-300 mt-1"
+        />
+      </form>
+    </div>
+  </body>
+</html>
