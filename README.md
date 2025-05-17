@@ -1,4 +1,4 @@
-# PDF-Raeder-Flask
+# PDF-Reader-Flask
 
 A simple web application built with **Flask** and **pdfplumber** that allows users to upload a PDF file and extract its text content. The extracted text is then displayed in the browser for easy reading or copy-pasting.
 
